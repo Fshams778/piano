@@ -1,0 +1,41 @@
+
+
+body {
+    background-color: rgb(39, 2, 74);
+  }
+  
+  h1{
+    color: rgb(233, 240, 240);
+    text-align: center;
+  }
+
+  .container {
+    text-align: center;
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    margin-left: 130px;
+    border: 20px;
+    border-color: black;
+    border-radius: 1.2em;
+  }
+  
+.white {
+    position: relative;
+    background: rgb(241, 240, 240);
+    width: 10%;
+    height: 400px;
+    margin: 0 2px;
+  }
+  
+  .white.black:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: rgb(17, 11, 11);
+    right: -25%;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+  }
